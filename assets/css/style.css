@@ -93,6 +93,8 @@
   padding-bottom: 40px;
   > .main__country {
     width: 270px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
     background-color: var(--white-backcolor);
     > .main__flag > img {
       width: 270px;
