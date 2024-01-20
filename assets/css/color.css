@@ -1,0 +1,22 @@
+:root{
+    --white-backcolor:#FFF;
+    --darkWhite-backcolor:#FAFAFA;
+    --text-color:#111517;
+    --shadow-color:#0000000d;
+
+}
+[data-theme='lightMode'] {
+    --white-backcolor:#FFF;
+    --darkWhite-backcolor:#FAFAFA;
+    --text-color:#111517;
+    --shadow-color:#0000000d;
+}
+
+[data-theme='darkMode'] {
+    --white-backcolor:#2B3844;
+    --darkWhite-backcolor:#202C36;
+    --text-color:#FFF;
+    --shadow-color:#00000008;
+
+}
+

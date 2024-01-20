@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--white-backcolor);
+  >h2{
+    color:var(--text-color);
+  }
+  > button {
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-backcolor);
+    font-size: 16px;
+    font-weight: 600;
+    gap: 10px;
+    color:var(--text-color);
+    >svg{
+      fill: var(--text-color);
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  > .header__filt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white-backcolor);
+    width: 35vw;
+    padding: 15px 20px;
+    border-radius: 10px;
+    ::placeholder{
+      color:var(--text-color);
+    } 
+    > .header__filt-input {
+      color:var(--text-color);
+      width: 80%;
+      background-color: var(--white-backcolor);
+      border: none;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      outline: none;
+    }
+  }
+  > .header__filt-regions {
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 14px;
+    padding-left: 20px;
+    list-style-type: none;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: var(--white-backcolor);
+    position: relative;
+    color:var(--text-color);
+    > ul {
+      display: none;
+      width: 200px;
+      height: 160px;
+      top: 55px;
+      left: 0;
+      box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      position: absolute;
+      background-color: var(--white-backcolor);
+      > .header__region {
+        list-style-type: none;
+        padding-left: 20px;
+        padding-top: 10px;
+        color:var(--text-color);
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 50px;
+  padding-bottom: 40px;
+  > .main__country {
+    width: 270px;
+    background-color: var(--white-backcolor);
+    > .main__flag > img {
+      width: 270px;
+      height: 160px;
+    }
+    > .main__country-name {
+      padding-left: 10%;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      > h2 {
+        font-size: 18px;
+        padding-bottom: 15px;
+        color:var(--text-color);
+      }
+      > h4 {
+        color:var(--text-color);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        margin-bottom: 8px;
+        > span {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
