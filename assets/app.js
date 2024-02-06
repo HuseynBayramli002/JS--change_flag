@@ -1,7 +1,7 @@
 let modeColor = document.querySelector('.modecolor');
 let countryContainer = document.querySelector(".main");
 let regionsContainer = document.querySelector(".header__regions__container")
-
+let searchInput = document.querySelector(".header__search__input")
 
 //! Dark thema 
 modeColor.addEventListener('click', () => {
@@ -48,14 +48,17 @@ function sellectRegion(e) {
         fetch(`https://restcountries.com/v3.1/region/${e.target.value}`)
             .then((res) => res.json())
             .then((data) => {
-                allCountries(data);
             })
     } else {
-        fetch(`https://restcountries.com/v3.1/all`)
-            .then((res) => res.json())
-            .then((data) => {
-                allCountries(data);
-            })
+        getCountries()
     }
-
 }
+//! Search input vasitesile olke melumati tapmaq
+searchInput.addEventListener('input', function (e) {
+    searchCountry = e.target.value.toLowerCase()
+    fetch(`https://restcountries.com/v3.1/name/${e.target.value}`)
+        .then((res) => res.json())
+        .then((data) => {
+            allCountries(data)
+        })
+})

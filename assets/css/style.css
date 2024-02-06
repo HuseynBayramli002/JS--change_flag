@@ -24,6 +24,7 @@
     }
   }
 }
+
 /*!    Header section  */
 .header {
   display: flex;
@@ -32,7 +33,8 @@
   padding-top: 20px;
   margin-bottom: 50px;
 }
-/* !   Header input section */
+
+/* !   Header search input section */
 .header__filt {
   display: flex;
   align-items: center;
@@ -45,7 +47,7 @@
     color: var(--text-color);
   }
 }
-.header__filt-input {
+.header__search__input {
   color: var(--text-color);
   width: 80%;
   background-color: var(--white-backcolor);
@@ -55,6 +57,7 @@
   font-weight: 400;
   outline: none;
 }
+
 /* !   Header search region section */
 .header__regions__container {
   padding: 15px 20px;
@@ -89,7 +92,6 @@
   width: 270px;
   height: 160px;
 }
-
 .main__country-name {
   padding-left: 10%;
   padding-top: 20px;
